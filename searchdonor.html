@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8sh+WyC8bU/D5z9L4AC72d1FQBAW/8hL4xqB9L" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Explora&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;300;400;500;600;700&family=Lora:ital@0;1&family=Varela&family=Varela+Round&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="searchdonor.css">
+  <title>Blood Donation</title>
+</head>
+<body>
+
+
+    <div class="top-bar">
+      <div class="topleft">
+        <h1>DONATEBLOOD</h1>
+      </div>
+  
+      <div class="top-center">
+        <ul class="top-menu">
+          <li class="toplist"><a href="home.html">Home</a></li>
+          <li class="toplist"><a href="#">SearchDonor</a></li>
+          <li class="toplist"><a href="index.html">Donate</a></li>
+          <li class="toplist"><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+  
+      <div class="topRight">
+        <i class="fas fa-user" style="padding-right: 30px;"></i>        
+      </div>
+    </div>
+   
+<div class="container1" >
+    <div class="content">
+      <center>  
+        <p>Every Drop Counts: Donate Blood Today!</p>
+      </center>
+    </div>
+
+    <div class="donar">
+        <table>
+            <th></th>
+            <th></th>
+            <tr>
+                <td><label for="bloodgrp">Select Blood group:</label></td>
+                <td><select id="booldgrp" name="bloodgrp" style="width: 250px;height: 50px;border-radius:10px; font-size: 20px">
+                    <option value="Select">Select</option>
+                    <option value="A+">A</option>
+                    <option value="A-">A-</option>
+                    <option value="B+">B+</option>
+                    <option value="B-">B-</option>
+                    <option value="0+">O+</option>
+                    <option value="O-">O-</option>
+                    <option value="AB+">AB+</option>
+                    <option value="AB-">AB-</option>
+                </select></td>
+            </tr>
+            <tr>
+                <td><label for="city">Select City:</label></td>
+                <td><select id="city" name="city" style="width: 250px;height: 50px;border-radius:10px; font-size: 20px">
+                    <option value="Select">Select</option>
+                    <option value="Salem">Salem</option>
+                    <option value="Erode">Erode</option>
+                    <option value="Karur">Karur</option>
+                    <option value="Trichy">Trichy</option>
+                </select></td>
+            </tr>
+
+            <tr>
+                <td></td>
+                <td><button onclick="fetch()" style="width: 100px;height: 50px;border-radius:10px; font-size: 20px">submit</button></td>
+            </tr>
+
+        </table>
+    </div>
+
+   
+
+  </div>
+</body>
+</html>  
